@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>أ. فلان بن فلان آل فلان</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet"></noscript>
+  
+  <!-- Font Awesome -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <style>
+    :root {
+      --gold: #c9b37e;
+      --teal: #00a99d;
+      --teal-dark: #007f76;
+      --text: #171717;
+      --muted: #6f7680;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #fdfaf3 0%, #f5f1e6 40%, #f0ebdd 100%);
+      font-family: "Cairo", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0,0,0,.12);
+      text-align: center;
+    }
+
+    .card-header img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 8px 18px 12px;
+    }
+
+    .name-ar {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0 0 3px;
+    }
+
+    .name-en {
+      font-size: 15px;
+      color: var(--text);
+      margin-bottom: 8px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .role-ar {
+      font-size: 16px;
+      color: var(--teal);
+      font-weight: 700;
+      margin-bottom: 3px;
+      letter-spacing: 1px;
+    }
+
+    .role-en {
+      font-size: 14px;
+      color: var(--teal-dark);
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .item {
+      text-align: center;
+    }
+
+    .item small { 
+      font-size: 11px;
+      color: var(--muted); 
+      display: block;
+    }
+
+    .item a {
+      text-decoration: none;
+      color: var(--gold);
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .item a[dir="ltr"] {
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 12px 0;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--gold);
+      font-size: 14px;
+      background: #fff;
+      direction: ltr;
+      unicode-bidi: embed;
+    }
+
+    .btn.call {
+      background: var(--teal);
+      color: #fff;
+      border-color: var(--teal);
+    }
+
+    .btn i {
+      font-size: 15px;
+    }
+
+    .location {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 2px;
+    }
+
+    .location-en {
+      font-size: 12px;
+      color: var(--muted);
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .company {
+      border-top: 1px solid rgba(0,0,0,.08);
+      padding: 4px 10px 6px;
+    }
+
+    .company img { 
+      width: 145px;
+      margin-bottom: 2px;
+    }
+
+    .company div {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .company small {
+      color: var(--teal-dark);
+      font-size: 11px;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <img src="card.png" alt="Card Front">
+    </div>
+
+    <div class="content">
+      <div class="name-ar">أ. فلان بن فلان آل فلان</div>
+      <div class="name-en">Fulan bin Fulan Al-Fulan</div>
+
+      <div class="role-ar">مدير العمليات</div>
+      <div class="role-en">Chief Operating Officer (COO)</div>
+
+      <div class="grid">
+        <div class="item">
+          <small>الجوال</small>
+          <a href="tel:+96600000" dir="ltr">+966 00000</a>
+        </div>
+
+        <div class="item">
+          <small>المكتب</small>
+          <a href="tel:05000000" dir="ltr">05000000</a>
+        </div>
+
+        <div class="item">
+          <small>البريد</small>
+          <a href="mailto:f.fulan@example.com">f.fulan@example.com</a>
+        </div>
+
+        <div class="item">
+          <small>الموقع</small>
+          <a href="https://www.example.com" target="_blank" rel="noopener">
+            www.example.com
+          </a>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <a class="btn call" href="tel:+96600000">
+          <i class="fa-solid fa-phone"></i> اتصال
+        </a>
+        <a class="btn" href="https://wa.me/96600000">
+          <i class="fa-brands fa-whatsapp"></i> واتساب
+        </a>
+        
+        <a class="btn" href="" download>
+          <i class="fa-solid fa-address-card"></i> حفظ جهة الاتصال
+        </a>
+
+        <a class="btn" href="mailto:f.fulan@example.com">
+          <i class="fa-solid fa-envelope"></i> البريد
+        </a>
+      </div>
+
+      <div class="location">
+        المملكة العربية السعودية – الرياض
+      </div>
+      <div class="location-en">
+        Kingdom of Saudi Arabia – Riyadh
+      </div>
+    </div>
+
+    <div class="company">
+      <img src="logo.png" alt="Logo">
+      <div>شركة وهمية للاستثمار والتطوير العقاري</div>
+      <small>FAKE REAL ESTATE &amp; DEVELOPMENT CO.</small>
+    </div>
+
+  </div>
+</body>
+</html>
